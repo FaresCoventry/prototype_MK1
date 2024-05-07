@@ -66,7 +66,7 @@ function Dashboard() {
         
         <div className='dashboard-container bg-white'>
           
-          <div className='search-container grid grid-cols-3 gap-6 p-5'>
+          <div className='search-container '>
             <div className='search-prefs'>
               <h2>Property Prefrences</h2>
               <form onSubmit={handleSubmit}>

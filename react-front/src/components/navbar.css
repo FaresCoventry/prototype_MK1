@@ -21,8 +21,16 @@
     align-items: center;
 }
 
+.synpro1__navbar-sign p{
+    padding: 20px;
+}
+
 .synpro1__navbar-links_container {
     display: flex;
+}
+
+.synpro1__navbar-links_container p{
+    padding: 20px;
 }
 
 .text-shadow-pop-top {

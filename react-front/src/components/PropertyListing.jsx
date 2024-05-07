@@ -87,7 +87,7 @@ const PropertyListing = () => {
               <tr><td className="pr-4 py-1">Living Rooms</td><td>{property.livings}</td></tr>
               <tr><td className="pr-4 py-1">Bathrooms</td><td>{property.wc}</td></tr>
               <tr><td className="pr-4 py-1">Area</td><td>{property.area} sq.m.</td></tr>
-              <tr><td className="pr-4 py-1">Kitchens</td><td>{property.ketchen} sq.m.</td></tr>
+              <tr><td className="pr-4 py-1">Kitchens</td><td>{property.ketchen}</td></tr>
               <tr><td className="pr-4 py-1">Furnished</td><td>{property.furnished ? 'Yes' : 'No'}</td></tr>
               <tr><td className="pr-4 py-1">Added on</td><td>{property.createdAt}</td></tr>
             </table>

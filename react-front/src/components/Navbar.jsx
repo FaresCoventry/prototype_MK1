@@ -18,10 +18,7 @@ const Navbar = () => {
         <div className='synpro1__navbar-links'>
           <div className='synpro1__navbar-links_container'>
             <p className='text-shadow-pop-top'><a href="#home">Home</a></p>
-            <p className='text-shadow-pop-top'><a href="#howitworks">How it Works</a></p>
-            <p className='text-shadow-pop-top'><a href="#properties">Properties</a></p>
-            <p className='text-shadow-pop-top'><a href="#aboutus">About Us</a></p>
-            <p className='text-shadow-pop-top'><a href="#contactus">Contact Us</a></p>
+            <p className='text-shadow-pop-top'><a href="#howitworks">Dashboard</a></p>
           </div>
         </div>
 
