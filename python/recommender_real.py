@@ -3,10 +3,15 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.cluster import KMeans
+import os
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Construct the path to the CSV file relative to the script
+listings_path = os.path.join(current_dir, 'listings_rating_clean.csv')
 
 def get_recommendations():
     # Load your dataset
-    df = pd.read_csv(r'C:\Users\PC\Desktop\FaresGradProject\listings_rating_clean.csv')
+    df = pd.read_csv(listings_path)
 
     # Features and target
     features = ['beds', 'price', 'category', 'livings', 'wc', 'area', 'ketchen', 'furnished', 'city', 'district', 'width', 'length']

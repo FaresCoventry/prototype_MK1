@@ -7,11 +7,17 @@ from sklearn.pipeline import make_pipeline
 import sys
 import json
 
+import os
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Construct the path to the CSV file relative to the script
+listings_path = os.path.join(current_dir, 'Listings_filter_clean.csv')
+
 input_str = sys.stdin.buffer.read().decode('utf-8')
 preferences = json.loads(input_str)
 
 # Load dataset
-df = pd.read_csv(r'C:\Users\PC\Desktop\FaresGradProject\Listings_filter_clean.csv')
+df = pd.read_csv(listings_path)
 
 # Preprocessing pipeline
 preprocessor = ColumnTransformer(
