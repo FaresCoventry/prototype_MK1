@@ -64,7 +64,7 @@ app.post('/submit-prefs', (req, res) => {
 });
 
 app.get('/get-recommendations', (req, res) => {
-  const pythonProcess1 = spawn('python', ['C:/Users/PC/Desktop/prototype_MK1/python/recommender_real.py']);
+  const pythonProcess1 = spawn('python', ['C:/Users/PC/Desktop/prototype_MK1/python/testingRecs.py']);
 
   pythonProcess1.stdout.on('data', (data) => {
       console.log(`stdout: ${data}`);

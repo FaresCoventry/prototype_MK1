@@ -47,6 +47,6 @@ def recommend(properties, model, top_n=5):
     # Return top n properties sorted by predicted ratings
     return properties.sort_values(by='predicted_rating', ascending=False).head(top_n)
 
-# Example: Recommend top 5 properties
+
 recommended_properties = recommend(df, pipeline, top_n=5)
 print(recommended_properties)

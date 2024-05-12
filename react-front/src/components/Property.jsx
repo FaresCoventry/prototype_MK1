@@ -18,6 +18,7 @@ const Property = ({ id, price, beds, wc, area, ketchen, furnished, city, distric
       <div className='property-details'>
         <h3>Price: {price}</h3>
         <h2>{city}</h2>
+        <h2>{id}</h2>
         <p>{district}</p>
         <div className='property-info'>
           <p>Beds: {beds}</p>
